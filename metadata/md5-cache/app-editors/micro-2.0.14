@@ -1,0 +1,14 @@
+BDEPEND=>=dev-lang/go-1.12 app-arch/unzip
+DEFINED_PHASES=compile install postinst prepare unpack
+DESCRIPTION=A modern and intuitive terminal-based text editor
+EAPI=7
+HOMEPAGE=https://micro-editor.github.io https://github.com/zyedidia/micro
+IUSE=wayland
+KEYWORDS=*
+LICENSE=MIT
+RDEPEND=|| ( !wayland? ( x11-misc/xsel x11-misc/xclip ) wayland? ( gui-apps/wl-clipboard ) )
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://github.com/zyedidia/micro/tarball/7685fb9770b27ce2ea2ef94a7e6588ec9cb23ae9 -> micro-2.0.14-7685fb9.tar.gz https://direct.funtoo.org/71/b3/bf/71b3bf5f04e2a087436d8e955f4ad3a51b93b240950dd97ae1ba40b03a6988993a2e26dde59d2dc2f138c5bda0b19f7bb0942c27af1d4e94f6876de507440167 -> micro-2.0.14-funtoo-go-bundle-7fb055b80974ebb8558c28999de2782684a64a9f83c447ead70ce38f1a896b116c9b42103b3b427665722e1345317eaf5faa6e179f93122c3d70e79c63837196.tar.gz
+_eclasses_=go-module	cb10a443c46556a15ed035d7a99128e8	xdg-utils	14d00d009167652b1fa363e55effe213
+_md5_=2e862d402dfc56c55d40be6ffa6e9eb4
